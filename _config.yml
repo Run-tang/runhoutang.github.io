@@ -2,7 +2,6 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:title
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
-markdown: redcarpet
 
 highlighter: rouge
 paginate: 20 # pagination based on number of posts
@@ -17,7 +16,7 @@ tags_path : tags.html
 #BASE_PATH : http://blog.ankanbiswas.in/uno-dbyll
 BASE_PATH : http://goileolee.github.io
 
-description : 深沉的意志，恢宏的想象和炽热的情感
+description :奋斗的少年不应该停下脚步
 title : Goileo Lee
 logo : /assets/images/avatar.jpg
 #cover : /assets/images/background-cover.jpg
