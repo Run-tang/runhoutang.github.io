@@ -6,7 +6,7 @@
       minimumHeaders: 3,
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ol', // values: [ol|ul]
-      
+
       linkHeader: true,
       linkHere: false,
       linkHereText: '',
@@ -15,23 +15,23 @@
       backToTopId: '',
       backToTopText: '',
       backToTopTitle: 'Back to top',
-      backToTopDisplay: 'always', // values: [always|highest] 
+      backToTopDisplay: 'always', // values: [always|highest]
     },
     settings = $.extend(defaults, options);
 
     var headers = $(settings.headers).filter(function() {
-      // get all headers with an ID
+      // get all headers with an ID  获取所有带有 ID 的标题
       var previousSiblingName = $(this).prev().attr( "name" );
       if (!this.id && previousSiblingName) {
         this.id = $(this).attr( "id", previousSiblingName.replace(/\./g, "-") );
       }
       return this.id;
     }), output = $(this);
-    
+
     if (!headers.length || headers.length < settings.minimumHeaders || !output.length) {
       return;
     }
-    
+
     var get_level = function(ele) { return parseInt(ele.nodeName.replace("H", ""), 10); }
     var highest_level = headers.map(function(_, ele) { return get_level(ele); }).get().sort()[0];
 
@@ -58,7 +58,7 @@
         window.location.hash = '';
       }
       window.location.hash = hash;
-      
+
     }
 
     $(headers).each(function(_, header) {
@@ -86,12 +86,12 @@
         switch(settings.backToTopDisplay){
           case 'highest':
             if ( this_level === highest_level ) {
-              $(header).append( back_to_top(settings.backToTopId) );      
+              $(header).append( back_to_top(settings.backToTopId) );
             }
             break;
           case 'always':
           default:
-            $(header).append( back_to_top(settings.backToTopId) );      
+            $(header).append( back_to_top(settings.backToTopId) );
         }
       }
 
