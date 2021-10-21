@@ -19,9 +19,9 @@ defaults:
       permalink: /blog/:year/:month/:day/:title/
 
 
-title: yourwebsiteName #网页信息
+title: 签名位置 #网页信息
 url: https://blog.yourwebsite.com #CNAME地址
-author: baiyuNinja #作者
+author: 润喉糖 #作者
 
 
 # 社交链接
@@ -33,7 +33,7 @@ social:
 # 页脚信息
 info-url:
   github: https://www.github.io #github地址
-  email: yourNickName@test.com #邮箱地址
+  email: joebrack331@gmail.com #邮箱地址
 # domain: https://github.com/baiyuNinja
 
 # 基本固定的静态资源，建议使用自己的UCloud香港区对象存储
@@ -50,11 +50,11 @@ cdn-url:
 
 # 博客中可定制的字符串
 string:
-  first-year: 1970 YML
+  first-year: 2021 YML
   home-name: NAME YML
   index: indexPageInfo YML
 # 如需展示在线简历，请填充在线简历链接
-  projects: 實習 / 項目 / <a href="/" target="_blank">我的簡歷</a> YML
+  projects: 實習 / 项目 / <a href="/" target="_blank">我的简历</a> YML
   blog: 🔍 <a href="/blog/categories.html">分類</a> YML
   about: aboutPageInfo YML
   copyright: yourCopyright YML
