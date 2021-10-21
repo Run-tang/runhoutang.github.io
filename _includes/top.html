@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cn">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+  <link rel="stylesheet" type="text/css" href={{ site.cdn-url.css }} />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href={{ site.cdn-url.fav }} />
+<!--   <meta property="og:type" content="website" /> -->
+  <!-- <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url}}" /> -->
+  {% if page.title %}<meta property="og:title" content="{{ page.title }}" />{% endif %}
+  {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt }}" />{% endif %}<!--   <meta property="og:image" content="{% if page.preview_image %}{{ page.preview_image }}{% else %}http://1024bit.io/images/contents/cat.png{% endif %}" /> -->
+  <script>
+    var trackOutboundLink = function(url) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon',
+        'event_callback': function(){document.location = url;}
+      });
+    }
+  </script>
+</head>
+<body class="{{ page.section }}">
+  <div id="container">
+    <div class="wrap">
+    <div id="header">
+      <div id="branding">
+        <h1 id="site-title">
+          <a href="/" rel="Home"> {{ site.string.home-name }}</a>
+        </h1>
+      </div>
+      <div id="menu-primary" class="menu-container">
+        <div class="menu">
+          <ul id="menu-primary-items">
+            <li class="menu-item home"><a class="spec" href="/">首頁</a></li>
+            <li class="menu-item projects"><a class="spec" href="/projects">項目</a></li>
+            <li class="menu-item blog"><a class="spec" href="/blog">博文</a></li>
+            <li class="menu-item about"><a class="spec" href="/about">關於我</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div id="main">

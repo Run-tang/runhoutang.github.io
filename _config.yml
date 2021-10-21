@@ -1,0 +1,60 @@
+highlighter: rouge
+permalink: none
+
+# 忽略文件
+exclude: [LICENSE, local.sh, docker.sh, Rakefile, Gemfile, Gemfile.lock, README.md, vendor]
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:day/:title/
+
+
+title: yourwebsiteName #网页信息
+url: https://blog.yourwebsite.com #CNAME地址
+author: baiyuNinja #作者
+
+
+# 社交链接
+social:
+  name: yourNickName #昵称或名字
+  wechat: https://github.io #微信二维码链接
+  telegram: https://github.io #telegram链接
+
+# 页脚信息
+info-url:
+  github: https://www.github.io #github地址
+  email: yourNickName@test.com #邮箱地址
+# domain: https://github.com/baiyuNinja
+
+# 基本固定的静态资源，建议使用自己的UCloud香港区对象存储
+# 或者使用根目录下的静态文件
+cdn-url:
+  jquery-min: https://1024bit.cn-bj.ufileos.com/blog%2Fstatic%2Fjquery.min.js
+  toc-js: /js/toc/toc.js
+# toc-js: https://1024bit.cn-bj.ufileos.com/blog%2Fstatic%2Ftoc.js
+  css: /css/style.css #css: https://1024bit.cn-bj.ufileos.com/blog%2Fstatic%2Fstyle.css
+# 首页logo
+  logo: https://1024bit.cn-bj.ufileos.com/blog%2Fimages%2Fcat%2Fcat.png
+# 网站标签图标
+  fav: https://1024bit.cn-bj.ufileos.com/blog%2Fimages%2Fcat%2Ffav.png
+
+# 博客中可定制的字符串
+string:
+  first-year: 1970 YML
+  home-name: NAME YML
+  index: indexPageInfo YML
+# 如需展示在线简历，请填充在线简历链接
+  projects: 實習 / 項目 / <a href="/" target="_blank">我的簡歷</a> YML
+  blog: 🔍 <a href="/blog/categories.html">分類</a> YML
+  about: aboutPageInfo YML
+  copyright: yourCopyright YML
