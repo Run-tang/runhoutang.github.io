@@ -50,11 +50,11 @@ cdn-url:
 
 # 博客中可定制的字符串
 string:
-  first-year: 2021 YML
+  first-year: 2020 YML
   home-name: NAME YML
-  index: indexPageInfo YML
+  index: 关于人生
 # 如需展示在线简历，请填充在线简历链接
-  projects: 實習 / 项目 / <a href="/" target="_blank">我的简历</a> YML
-  blog: 🔍 <a href="/blog/categories.html">分類</a> YML
-  about: aboutPageInfo YML
+  projects: 实习 / 项目 / <a href="/" target="_blank">我的简历</a> YML
+  blog: 🔍 <a href="/blog/categories.html">分类</a> YML
+  about: 关于我
   copyright: yourCopyright YML
