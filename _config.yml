@@ -50,11 +50,11 @@ cdn-url:
 
 # 博客中可定制的字符串
 string:
-  first-year: 2020 YML
-  home-name: NAME YML
+  first-year: 2020
+  home-name: 润喉糖技术库
   index: 关于人生
 # 如需展示在线简历，请填充在线简历链接
-  projects: 实习 / 项目 / <a href="/" target="_blank">我的简历</a> YML
-  blog: 🔍 <a href="/blog/categories.html">分类</a> YML
+  projects: 实习 / 项目 / <a href="/" target="_blank">我的简历</a>
+  blog: 🔍 <a href="/blog/categories.html">分类</a>
   about: 关于我
-  copyright: yourCopyright YML
+  copyright: 行人总会变成路人
